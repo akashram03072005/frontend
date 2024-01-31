@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      // triangle one
+
+    let n = 5; 
+let string = "";
+
+for(let i = 0; i < n; i++) { 
+  for(let j = 0; j < n; j++) { 
+    string += "*";
+  }
+  
+  string += "\n";
+}
+
+console.log(string);
+// triange 2
+  let n1 = 5;      
+let string1 = "";
+for (let i = 1; i <= n1; i++) {
+  
+  for (let j = 0; j < n1 - i; j++) {
+    string1 += " ";
+  }
+  
+  for (let k = 0; k < i; k++) {
+    string1 += "*";
+  }
+  string1 += "\n1";
+}
+console.log(string);
+
+// trianle 3
+let n2 = 5;
+let string2 = "";
+for (let i = 1; i <= n2; i++) {
+  for (let j = 0; j < i; j++) {
+    string2 += "*";
+  }
+  string2 += "\n2";
+}
+console.log(string2);
+// triangle4
+let n3 = 5;
+let string3 = "";
+
+for (let i = 1; i <= n3; i++) {
+  
+  for (let j = 1; j <= n3 - i; j++) {
+    string3 += " ";
+  }
+  
+  for (let k = 0; k < 2 * i - 1; k++) {
+    string3 += "*";
+  }
+  string3 += "\n3";
+}
+console.log(string3);
+
+// triangle5
+let n4 = 5;
+let string4 = "";
+
+for (let i = 0; i < n4; i++) {
+  
+  for (let j = 0; j < i; j++) {
+    string4 += " ";
+  }
+  
+  for (let k = 0; k < 2 * (n4-i) - 1; k++) {
+    string4 += "*";
+  }
+  string4 += "\n4";
+}
+console.log(string4);
+// trianle 5
+let n5 = 5;
+let string5 = "";
+
+for (let i = 1; i <= n5; i++) {
+  
+  for (let j = n5; j > i; j--) {
+    string5 += " ";
+  }
+  
+  for (let k = 0; k < i * 2 - 1; k++) {
+    string5 += "*";
+  }
+  string5 += "\n5";
+}
+// downside pyramid
+for (let i = 1; i <= n5 - 1; i++) {
+  // printing spaces
+  for (let j = 0; j < i; j++) {
+    string5 += " ";
+  }
+  // printing star
+  for (let k = (n5 - i) * 2 - 1; k > 0; k--) {
+    string5 += "*";
+  }
+  string5 += "\n5";
+}
+console.log(string5);
+
+
+
+let n6 = 5;
+let string6 = "";
+
+for (let i = 0; i < n6; i++) {
+  
+  for (let j = 0; j < i; j++) {
+    string6 += " ";
+  }
+ 
+  for (let k = 0; k < (n6 - i) * 2 - 1; k++) {
+    string6 += "*";
+  }
+  string6 += "\n6";
+}
+
+for (let i = 2; i <= n6; i++) {
+  
+  for (let j = n6; j > i; j--) {
+    string6 += " ";
+  }
+  
+  for (let k = 0; k < i * 2 - 1; k++) {
+    string6 += "*";
+  }
+  string6 += "\n6";
+}
+console.log(string6);
+</script>
+</body>
+</html>

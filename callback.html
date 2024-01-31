@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//         // callback
+// function addition(a, b, cb){
+//     var c = a = b;
+
+// }
+// function display(data){
+//     console.log(data,"data")
+// }
+// addition(10, 10, display)
+
+
+// function Task1(callback) {
+  
+//   console.log("Task is being performed");
+//   callback();
+// }
+// function Task2() {
+//   console.log("Task completed");
+// }
+// Task1(Task2);
+  
+
+// function akm (revice){
+//     consol.log("cooking somthing special");
+//     revice();
+
+// }
+
+// function edith(){
+//     console.log("done by akmedith");
+// }
+// akm(edith)
+
+
+var a = 10;
+ 
+const promiseVar = new Promise((res,rej)  =>{
+    if (a == 19){
+    res("a is equal to 10");
+}else{
+    rej("not equal");
+}
+});
+
+promiseVar
+   .then((sucessMeassage) => {
+    console.log(sucessMeassage,"sucessmeassage");
+   })
+   .catch((error) => {
+    console.log(error,"error");
+   });
+
+
+</script>
+</body>
+</html>

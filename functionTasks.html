@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     function Arithmetic(num1, num2, operator) {
+    //     if (operator === '+') {
+    //       return num1 + num2;
+    //     } else if (operator === '-') {
+    //       return num1 - num2;
+    //     } else if (operator === '*') {
+    //       return num1 * num2;
+    //     } else if (operator === '/') {
+          
+    //       if (num2 !== 0) {
+    //         return num1 / num2;
+    //       } else {
+    //         return "akash ram";
+    //       }
+     
+    //   }
+    // }
+    //   console.log(Arithmetic(5, 3, '+')); 
+    //   console.log(Arithmetic(5, 3, '-')); 
+    //   console.log(Arithmetic(5, 3, '*')); 
+    //   console.log(Arithmetic(5, 0, '/')); 
+
+      // function tasks 2.0
+
+      function isArmstrongNumber(number) {
+  const numString = String(number);
+  const numDigits = numString.length;
+  let sum = 0;
+
+  for (let i = 0; i < numDigits; i++) {
+    sum += Math.pow(Number(numString[i]), numDigits);
+  }
+
+  return sum === number;
+}
+
+
+const exampleNumber = 153;
+if (isArmstrongNumber(exampleNumber)) {
+  console.log(`${exampleNumber} is an Armstrong number.`);
+} else {
+  console.log(`${exampleNumber} is not an Armstrong number.`);
+}
+
+// to fin average number of n numbers
+
+function calculateAverage(numbers) {
+  if (numbers.length === 0) {
+    return 0; 
+  }
+
+  const sum = numbers.reduce((acc, num) => acc + num, 0);
+  const average = sum / numbers.length;
+
+  return average;
+}
+
+
+const numbers = [10, 20, 30, 40, 50];
+const average = calculateAverage(numbers);
+
+console.log(`The average is: ${average}`);
+
+// biggest number of three
+function findLargestNumber(a, b, c) {
+  let largest = a;
+
+  if (b > largest) {
+    largest = b;
+  }
+
+  if (c > largest) {
+    largest = c;
+  }
+
+  return largest;
+}
+
+
+const num1 = 15;
+const num2 = 30;
+const num3 = 20;
+
+const largestNumber = findLargestNumber(num1, num2, num3);
+console.log(`The largest number is: ${largestNumber}`);
+
+// to find leapyear
+function isLeapYear(year) {
+  
+  return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+}
+
+
+const yearToCheck = 2024;
+
+if (isLeapYear(yearToCheck)) {
+  console.log(`${yearToCheck} is a leap year.`);
+} else {
+  console.log(`${yearToCheck} is not a leap year.`);
+}
+
+  // max value of array
+ 
+const number = [10, 5, 8, 20, 15];
+const maxValue = Math.max(...number);
+console.log(`The maximum value is: ${maxValue}`);
+
+   //minimum value of array
+   
+const number1 = [10, 5, 8, 20, 15];
+const minValue = Math.min(...number1);
+console.log(`The minimum value is: ${minValue}`);
+
+// sawping two numbers
+
+let a = 5;
+let b = 10;
+
+console.log(`Before swapping: a = ${a}, b = ${b}`);
+
+a = a + b;
+b = a - b;
+a = a - b;
+
+console.log(`After swapping: a = ${a}, b = ${b}`);
+
+
+        
+
+    </script>
+    
+      
+     
+</body>
+</html>

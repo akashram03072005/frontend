@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+    const numberArr = [10, 21, 3, 2];
+    let max = numberArr[0];
+
+    for (let i = 1; i < numberArr.length; i++) {
+        if (numberArr[i] > max) {
+            max = numberArr[i];
+        }
+    }
+
+    console.log("The maximum number is:", max);
+
+
+
+// for loop
+
+var collegedept = ["CSE", "IT", "ECE"];
+var collegname = "pondicherry engineering college";
+
+for (let item of collegedept) {
+    console.log(item, "item");
+}
+
+// for of
+
+for (let char of collegname) {
+    console.log(char, "for of the string");
+}
+
+// for in loop
+
+for (let index in collegedept) {
+    console.log(index, collegedept[index], "for in loop");
+}
+
+
+
+</script>
+
+</body>
+</html>
